@@ -14,18 +14,27 @@
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+      <h1 class="title">Side Menu</h1>
     </ion-header-bar>
     <ion-content>
+
+      <div class="img">
+        <img src="../ausapp/www/img/profile.jpg">
+      </div>
+
+
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
+        <!-- <ion-item menu-close ng-click="login()">
+          Settings  
+        </ion-item> -->
+        <ion-item menu-close href="#/app/search">
+          Settings
         </ion-item>
         <ion-item menu-close href="#/app/search">
-          Search
+          Post Image
         </ion-item>
         <ion-item menu-close href="#/app/browse">
-          Browse
+          Location
         </ion-item>
         <ion-item menu-close href="#/app/playlists">
           Playlists
