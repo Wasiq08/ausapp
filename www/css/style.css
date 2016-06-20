@@ -1,6 +1,24 @@
 /* Empty. Add your own CSS if you like */
-/*.img{
+.img{
 
 	margin-top: 5%;
-	margin-left: 10%;
+	margin-left: 30%;
+}
+#b{
+
+	margin-top: 5%;
+	margin-left: 25%;
+}
+
+/*#up{
+	margin-top: 5%;
+	margin-left: 30%;
+	margin-right: auto;
+	margin-bottom: auto;
 }*/
+
+.upload{
+	height: 75%;
+	width: 75%;
+	margin-top: 10%;
+}
