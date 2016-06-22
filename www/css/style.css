@@ -22,3 +22,8 @@
 	width: 75%;
 	margin-top: 10%;
 }
+
+.bg{
+
+	background-image: url(../img/car.jpg);
+}
