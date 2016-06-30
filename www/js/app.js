@@ -25,6 +25,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
+
+
+    .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
+  })
+
+
+    .state('signup', {
+    url: '/signup',
+    templateUrl: 'templates/signup.html',
+  })
+
+
     .state('app', {
     url: '/app',
     abstract: true,
@@ -32,8 +47,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.settings', {
+    url: '/settings',
     views: {
       'menuContent': {
         templateUrl: 'templates/settings.html'
@@ -41,16 +56,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+ 
+
+  .state('app.location', {
+      url: '/location',
       views: {
         'menuContent': {
           templateUrl: 'templates/location.html'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.dashboard', {
+      url: '/dashboard',
       views: {
         'menuContent': {
           templateUrl: 'templates/dashboard.html',
@@ -71,6 +88,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/login');
 });
 

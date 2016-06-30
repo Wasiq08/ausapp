@@ -1,25 +1,25 @@
 <ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form>
+
+  <ion-content style="background-color: #4f4f4f;">
+
+
+
+
+  <img src="../img/hip-logo.png" style=" width: 60%; margin-left: 20%; margin-top: 20%;"></img>
+
+<div class="list list-inset" style="background: transparent; margin-top: 30%;">
+  <label class="item item-input" id="label">
+    <i class="icon ion-person placeholder-icon"></i>
+    <input type="text" placeholder="Username" style="margin-left: 3%;">
+  </label>
+  <label class="item item-input" id="label" style="margin-top: 2%;">
+    <i class="icon ion-ios-locked placeholder-icon"></i>
+    <input type="password" placeholder="Password" style="margin-left: 4%;">
+  </label>
+  <button class="button button-block button-positive" type="submit" ui-sref = "app.dashboard" style="margin-top: 10%;">Log in</button>
+  <h4 style="color: #fff; margin-left: 40%;">-- Or --</h4>
+  <button class="button button-block button-positive" type="submit" ui-sref = "signup" style="margin-top: 5%;">Signu up</button>
+</div>
+
   </ion-content>
 </ion-modal-view>
