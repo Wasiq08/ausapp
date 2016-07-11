@@ -26,7 +26,9 @@
 
 .bg{
 
-	background-image: url(../img/car.jpg);
+	background-image: url(../img/carr.jpg);
+	background-size: contain;
+
 }
 
 
@@ -36,4 +38,7 @@
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
+	border-color: #fff;
+
 }
+
